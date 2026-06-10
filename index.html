@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta charset="UTF-8" />
+  <title>Site multilingv</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header-include"></div>
+	
+  <hr />
+
+  <main>
+    <h2 data-i18n="mainText">Bine ai venit pe site!</h2>
+
+	<a href="html/windows.html" class="image-box">
+  	   <img src="images/windows-banner1.jpg" alt="Imagine Windows" />
+	</a>
+
+    	<a href="html/office.html" class="image-box">
+      	   <img src="images/office-banner1.jpg" alt="Imagine Office">
+    	</a>
+
+	<a href="html/adobe_acrobat.html" class="image-box">
+      	   <img src="images/adobe-banner.jpg" alt="Imagine Adobe">
+    	</a>
+
+	<a href="html/visual_studio.html" class="image-box">
+	   <img src="images/Visual_studio_banner.jpg" alt="Imagine Visual Studio">
+	</a>
+	  
+  </main>
+
+  <!-- Scriptul JavaScript de i18n -->
+  <script src="js/i18n.js"></script>
+<script>
+  // La încărcare, citește parametru din URL și setează limba
+  document.addEventListener("DOMContentLoaded", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const paramLang = urlParams.get('lang');   // "ro", "en", etc.
+    if (paramLang) {
+      setLanguage(paramLang);
+    } else {
+      // Dacă nu e parametru, folosește, de ex., localStorage sau default
+      const savedLang = localStorage.getItem('language') || 'ro';
+      setLanguage(savedLang);
+    }
+  });
+</script>
+<script src="js/include-header.js"></script>
+	
+
+</body>
+</html>

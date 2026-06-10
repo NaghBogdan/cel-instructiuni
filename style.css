@@ -1,0 +1,385 @@
+/* Reset minim */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+  margin: 0 auto;
+  max-width: 900px; /* Lățimea maximă a paginii */
+  padding: 20px;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* poți pune un background color dacă vrei:
+     background-color: #eee; 
+  */
+}
+
+/* Titlu principal */
+header h1 {
+  font-size: 2em;
+}
+
+/* Meniul de limbi (NAV) */
+.language-nav ul {
+  display: flex;
+  list-style: none;   /* elimină bullet-urile */
+  gap: 20px;          /* spațiu orizontal între elemente */
+}
+
+.language-nav a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+/* Efect la hover pe linkurile de limbă */
+.language-nav a:hover {
+  color: #0056b3; /* o nuanță mai închisă de albastru */
+}
+
+/* Linie orizontală de sub header (hr) */
+hr {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column; /* Elementele (imaginile) vor fi afișate pe verticală */
+  gap: 20px; /* Spațiu între elemente */
+}
+
+/* Titlul de la interiorul paginii */
+main h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+/* Card/link (div) pentru imagine + text */
+.image-box {
+  display: block;
+  background-color: white;  
+  border: 2px solid #ccc;   
+  border-radius: 10px;       
+  text-decoration: none;    
+  color: inherit;           
+  overflow: hidden;         
+  transition: transform 0.2s ease;
+}
+
+/* Efect la hover pentru card */
+.image-box:hover {
+  transform: scale(1.01);
+  border-color: #007bff;
+}
+
+/* Imaginea din interiorul cardului */
+.image-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Textul din interiorul cardului */
+.image-box span {
+  display: block;
+  padding: 15px;
+  font-size: 1em;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header lat cu titlu centrat */
+.page-title {
+  background-color: #f2f2f2;
+  padding: 40px 0;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.page-title h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+/* Div de informații inițiale despre instalare */
+.info-instalare {
+  background-color: #f8f9fc;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Div pentru lista de erori comune */
+.erori-comune {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Div general pentru conținutul instrucțiunilor */
+.continut-instructiuni {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Fiecare pas este un mic "card" */
+.continut-instructiuni .pas {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;   /* Aliniere verticală la mijloc */
+  gap: 15px;            /* Spațiu între text și imagine */
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 20px 25px;
+}
+
+/* Imaginea din fiecare pas */
+.continut-instructiuni .pas img {
+  width: 550px;   /* Ajustează lățimea dorită */
+  border-radius: 15px; 
+  /* Poti adăuga box-shadow etc. */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Containerul principal pentru eroare 0xc004f050 */
+.eroare-0xc004f050 {
+  background-color: #fff;          /* Fundal alb pentru contrast */
+  border: 2px solid #ccc;         /* Linia de contur (gri deschis) */
+  border-radius: 10px;            /* Colțuri rotunjite */
+  padding: 20px 30px;             /* Spațiere interioară */
+  margin: 20px 0;                 /* Spațiere față de elementele din jur */
+  box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Umbră subtilă pentru efect de card */
+  max-width: 900px;               /* Lățime maximă, ca restul layoutului */
+  margin-left: auto;              /* Centrare orizontală */
+  margin-right: auto;
+}
+
+/* Paragrafele din interiorul containerului */
+.eroare-0xc004f050 p {
+  margin-bottom: 15px;            /* Spațiu între linii */
+  line-height: 1.5;               /* Înălțime linie ușor mărită pentru lizibilitate */
+}
+
+/* Stil suplimentar pentru link-urile din text */
+.eroare-0xc004f050 a {
+  color: #007bff;                 /* Albastru pentru linkuri */
+  text-decoration: none;          /* Fără subliniere implicită */
+  transition: color 0.2s ease;
+}
+
+.eroare-0xc004f050 ul {
+    padding-left: 20px;  /* Creează indentare pentru tab */
+    margin-bottom: 10px; /* Adaugă spațiu între liste */
+}
+
+.eroare-0xc004f050 ul li {
+    margin-bottom: 5px;  /* Adaugă spațiu între fiecare element din listă */
+}
+
+/* Efect la hover pe link */
+.eroare-0xc004f050 a:hover {
+  color: #0056b3;                 /* O nuanță mai închisă la hover */
+}
+
+
+
+
+
+
+/* ===================================
+   RESPONSIVE PENTRU DISPOZITIVE MOBILE
+   =================================== */
+
+/* 
+   Se aplică până în ~480px (majoritatea telefoanelor mai mici).
+*/
+@media only screen and (max-width: 414px) {
+  /* Body */
+  body {
+    margin: 0;
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  /* HEADER */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .language-nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .language-nav a {
+    font-size: 1.8em;
+    padding: 5px;
+  }
+
+  /* MAIN: carduri (img + text) pe un singur coloan */
+  main {
+    gap: 15px;
+  }
+
+  .image-box img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .image-box span {
+    font-size: 1.1em;
+    padding: 10px;
+  }
+
+  /* Pași instrucțiuni */
+  .continut-instructiuni .pas {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .continut-instructiuni .pas img {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .continut-instructiuni .pas p {
+    font-size: 1.05em;
+    line-height: 1.4em;
+  }
+
+  .page-title h1 {
+    font-size: 1.7em;
+    margin: 20px 0;
+    text-align: center;
+  }
+}
+
+/* 
+   Al doilea prag, până în 768px, pentru telefoane/tablete mai mari 
+*/
+@media only screen and (max-width: 768px) {
+  /* HEADER */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .language-nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .language-nav a {
+    font-size: 1.1em;
+    padding: 5px;
+  }
+
+  /* MAIN: carduri (img + text) pe un singur coloan */
+  main {
+    gap: 15px;
+  }
+
+  .image-box img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .image-box span {
+    font-size: 1.1em;
+    padding: 10px;
+  }
+
+  /* Pași instrucțiuni */
+  .continut-instructiuni .pas {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .continut-instructiuni .pas img {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .continut-instructiuni .pas p {
+    font-size: 1.05em;
+    line-height: 1.4em;
+  }
+
+  .page-title h1 {
+    font-size: 1.7em;
+    margin: 20px 0;
+    text-align: center;
+  }
+  /* Alte ajustări după preferințe */
+}
+
+
